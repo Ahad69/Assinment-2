@@ -1,0 +1,311 @@
+body{ 
+
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    background:#2632482a;
+    font-family: 'Poppins', sans-serif;
+}
+/* header start here ---------------------------------------------------
+----------------------------------------------------*/
+header{
+    display: flex;
+    height: 355;
+    background: #2D25A0;
+    padding: 17px 157px;
+    padding-bottom: 41px;
+}
+header:hover .ball{
+    transition-delay: 1s ;
+    animation-play-state: running;  
+  }
+.heading {
+    width: 355px;
+    margin: 0;
+    color: white;
+
+}
+h1{
+    font-size: 44px;
+}
+.heading a {
+    width: 50px;
+    height: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 24px;
+    background-color: #E02C6D; ;
+}
+.image{
+    padding-left: 290px;
+    width: 355px;
+    height: 334px;
+}
+.ball{
+    position: relative;
+    top: -169px;
+    left: 104px;
+    width: 40px;
+    transition: transform 2s linear   ;
+    animation: ball 2s ease-in-out .2s infinite ;
+    animation-play-state: paused;  
+}
+ /* key frames -------------------------------------------------------------------------
+ --------------------------------*/
+@keyframes ball {
+    0%{
+        top: -199px;
+        left: 104px;
+    }
+    25%{
+        left: 10px;
+        top: -390px;
+        transform: scale(1.25) rotate(90deg);
+    }
+    50%{
+        left: -200px;
+        top: -60px;
+        transform: scale(1.55) rotate(180deg);
+    }
+    75%{
+        left: -500px;
+        top: -360px;
+        transform: scale(1.85) rotate(270deg);
+    }
+
+    100%{
+        left:-900px;
+        top: -50px;
+        transform: scale(2) rotate(360deg);
+        
+    }
+}
+.kick{
+    width: 320px;
+    height: 320px;
+}
+/* section team-players start here----------------------------------------------------- */
+
+
+main{
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.players{
+    
+    width: 60%;
+    padding: 40px 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+}
+.player{
+    border-radius: 3px;
+    display: flex;
+    width: 270px;
+    height: 384px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 19px 15px 45px 15px;
+}
+
+.players img {
+    width: 267px;
+    height: 256px;
+    align-items: center;
+    border-radius: 5px;
+}
+h4{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 28px
+}
+p{ 
+    color: #6C6C6C;
+    margin: 0;
+    font-size: 16px;
+}
+/* section team-players end here ------------------------------------------------*/
+
+.hrcolor{
+    width: 75%;
+    color: red;
+    height: 10px;
+    background: red;
+    border-radius: 44px;
+}
+
+/* section other-team start here ------------------------------------------------
+----------------------------------------*/
+.others{
+    background: black;
+    padding: 40px 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    
+}
+.other{
+    border-radius: 3px;
+    display: flex;
+    width: 270px;
+    height: 384px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 19px 15px 45px 15px;
+}
+.other:hover{
+    border-radius: 3px;
+    display: flex;
+    width: 270px;
+    height: 384px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 19px 15px 45px 15px;
+    background: yellow;
+    transform: scale(1.2);
+     transition: transform 1s ease;
+}
+
+.others img {
+    width: 267px;
+    height: 256px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* popular player ----------------------------------------------------
+-----------------------------*/
+.populars{
+    padding: 40px 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    background: rosybrown;
+    
+}
+.popular{
+    border-radius: 3px;
+    display: flex;
+    width: 270px;
+    height: 384px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 19px 15px 45px 15px;
+    transition: width  5s, height 20s, transform 5s ;
+}
+.popular:hover{
+    border-radius: 3px;
+    display: flex;
+    width: 270px;
+    height: 384px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 19px 15px 45px 15px;
+    transform: rotate(360deg);
+}
+
+.populars img {
+    width: 267px;
+    height: 256px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* popular section end here--------------------------------
+-------------------------------------------------------- */
+.footer{
+    color:black;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer img {
+    width: 483px;
+    height: 110px;
+}
+.footer i {
+    width: 32px;
+    height: 32px;
+}
+.footer p {
+    color: black;
+}
+@media only screen and (max-width:688px) {
+
+    .players, .populars, .others{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        align-items: center;
+    }
+   header{
+       width: 688px;
+       height: 500px;
+   }
+   .heading{
+    width: 150px;
+    height: 150px;
+   }
+   .image{
+       padding-left: 10px;
+       width: 150px;
+       height: 250px;
+   }
+   .others{
+       align-items: center;
+       justify-content: center;
+   }
+}
+@media only screen and (max-width:992px) and (min-width:688px) {
+
+    .players{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        align-items: center;
+    }
+    .populars, .others{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        align-items: center;
+    }
+   header{
+       width: 100%;
+       height: 500px;
+   }
+   .heading{
+    width: 150px;
+    height: 150px;
+   }
+   .image{
+       padding-left: 100px;
+       width: 250px;
+       height: 350px;
+   }
+   .others{
+       align-items: center;
+       justify-content: center;
+   }
+}
