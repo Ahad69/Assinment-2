@@ -1,0 +1,225 @@
+body{ 
+
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    background:#2632482a;
+    font-family: 'Poppins', sans-serif;
+}
+/* header start here ---------------------------------------------------
+----------------------------------------------------*/
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 294px;
+    background: #2D25A0;
+    padding: 36px 157px;
+    padding-bottom: 41px;
+}
+header:hover .ball{
+    transition-delay: .2s ;
+    animation-play-state: running;  
+  }
+.heading {
+    width: 331px;
+    margin: 0;
+    color: white;
+
+}
+h1{
+    font-size: 44px;
+}
+.heading a {
+    width: 50px;
+    height: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 24px;
+
+    background-color: #E02C6D; ;
+}
+.image{
+    padding-left: 190px;
+    width: 355px;
+    height: 334px;
+}
+.ball{
+    position: relative;
+    top: -169px;
+    left: 104px;
+    width: 40px;
+    transition: transform 2s linear   ;
+    animation: ball 2s ease-in-out .2s infinite ;
+    animation-play-state: paused;  
+}
+ /* key frames -------------------------------------------------------------------------
+ --------------------------------*/
+@keyframes ball {
+    0%{
+        top: -199px;
+        left: 104px;
+    }
+    25%{
+        left: 10px;
+        top: -390px;
+        transform: scale(1.25) rotate(90deg);
+    }
+    50%{
+        left: -200px;
+        top: -60px;
+        transform: scale(1.55) rotate(180deg);
+    }
+    75%{
+        left: -500px;
+        top: -360px;
+        transform: scale(1.85) rotate(270deg);
+    }
+
+    100%{
+        left:-900px;
+        top: -50px;
+        transform: scale(2) rotate(360deg);
+        
+    }
+}
+.kick{
+    width: 320px;
+    height: 320px;
+}
+/* section team-players start here----------------------------------------------------- */
+
+
+main{
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.players{
+    
+    width: 60%;
+    padding: 40px 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+}
+.player{
+    border-radius: 3px;
+    display: flex;
+    width: 270px;
+    height: 384px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 19px 15px 45px 15px;
+}
+
+.players img {
+    width: 267px;
+    height: 256px;
+    align-items: center;
+    border-radius: 5px;
+}
+h4{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 28px
+}
+p{ 
+    color: #6C6C6C;
+    margin: 0;
+    font-size: 16px;
+}
+/* section team-players end here ------------------------------------------------*/
+
+.hrcolor{
+    width: 75%;
+    color: red;
+    height: 10px;
+    background: red;
+    border-radius: 44px;
+}
+
+/* section other-team start here ------------------------------------------------
+----------------------------------------*/
+
+.teams{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.other{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    box-shadow: 10px 10px 40px grey;
+    border-radius: 10px;
+}
+.other:hover{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 10px;
+}
+/* popular player ----------------------------------------------------
+-----------------------------*/
+.populers{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.popular{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    box-shadow: 10px 10px 40px grey;
+    border-radius: 10px;
+}
+.popular:hover{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 10px;
+}
+/* popular section end here--------------------------------
+-------------------------------------------------------- */
+.footer{
+    color:black;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer img {
+    width: 483px;
+    height: 110px;
+}
+.footer i {
+    width: 32px;
+    height: 32px;
+}
+.footer p {
+    color: 2;
+}
