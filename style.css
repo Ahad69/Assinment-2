@@ -20,7 +20,7 @@ header:hover .ball{
     animation-play-state: running;  
   }
 .heading {
-    width: 331px;
+    width: 50%;
     margin: 0;
     color: white;
 
@@ -39,7 +39,7 @@ h1{
 }
 .image{
     padding-left: 350px;
-    width: 355px;
+    width: 50%;
     height: 334px;
 }
 .ball{
@@ -251,6 +251,9 @@ p{
 .footer p {
     color: black;
 }
+/* mobile -----------------------------------------------------------
+--------------------------------------------------*/
+
 @media only screen and (max-width:688px) {
 
     .players, .populars, .others{
@@ -277,6 +280,9 @@ p{
        justify-content: center;
    }
 }
+/* -----------------------------------------tablet
+----------------------------------------------- */
+
 @media only screen and (max-width:992px) and (min-width:688px) {
 
     .players{
@@ -300,7 +306,8 @@ p{
     height: 150px;
    }
    .image{
-       padding-left: 100px;
+       padding-left: 200px;
+       padding-left: 200px;
        width: 250px;
        height: 350px;
    }
@@ -308,4 +315,6 @@ p{
        align-items: center;
        justify-content: center;
    }
+
+
 }
